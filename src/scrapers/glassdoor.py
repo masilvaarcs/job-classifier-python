@@ -27,7 +27,7 @@ class GlassdoorScraper(BaseScraper):
 
         cards = soup.find_all('li', class_='JobsList_jobListItem__wjTHv')
         if not cards:
-            cards = soup.find_all('li', data-test='jobListing')
+            cards = soup.find_all('li', attrs={'data-test': 'jobListing'})
 
         for card in cards:
             try:
