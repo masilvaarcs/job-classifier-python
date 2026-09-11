@@ -1,0 +1,6 @@
+version: v2
+plugins:
+  - local: protoc-gen-python
+    out: job-classifier-python/src/gen
+  - local: protoc-gen-python_grpc
+    out: job-classifier-python/src/gen
