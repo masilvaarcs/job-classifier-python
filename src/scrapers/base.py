@@ -10,7 +10,7 @@ from typing import List, Optional
 import requests
 from bs4 import BeautifulSoup
 
-from ..models.vaga import Vaga, TipoTrabalho
+from src.models.vaga import Vaga, TipoTrabalho
 
 
 class BaseScraper(ABC):

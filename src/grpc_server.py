@@ -23,7 +23,7 @@ if str(GEN_DIR) not in sys.path:
 
 from job.v1 import scraping_pb2, scraping_pb2_grpc, vagas_pb2  # noqa: E402
 
-from .services.extractor import Extractor, SCRAPERS  # noqa: E402
+from src.services.extractor import Extractor, SCRAPERS  # noqa: E402
 
 extractor = Extractor()
 

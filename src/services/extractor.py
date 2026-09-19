@@ -9,13 +9,13 @@ import os
 from datetime import datetime
 from typing import Dict, List, Optional
 
-from ..scrapers.linkedin import LinkedInScraper
-from ..scrapers.indeed import IndeedScraper
-from ..scrapers.jooble import JoobleScraper
-from ..scrapers.freelancer import FreelancerScraper
-from ..scrapers.glassdoor import GlassdoorScraper
-from ..scrapers.bne import BNEScraper
-from ..models.vaga import Vaga
+from src.scrapers.linkedin import LinkedInScraper
+from src.scrapers.indeed import IndeedScraper
+from src.scrapers.jooble import JoobleScraper
+from src.scrapers.freelancer import FreelancerScraper
+from src.scrapers.glassdoor import GlassdoorScraper
+from src.scrapers.bne import BNEScraper
+from src.models.vaga import Vaga
 
 
 # Mapa de scrapers disponíveis
@@ -124,3 +124,4 @@ class Extractor:
                 with open(arquivo, 'r', encoding='utf-8') as f:
                     todos_dados.extend(json.load(f))
         return todos_dados
+

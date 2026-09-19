@@ -5,7 +5,7 @@ Scraper para Glassdoor — Extração de vagas de emprego.
 from typing import List
 
 from .base import BaseScraper
-from ..models.vaga import Vaga
+from src.models.vaga import Vaga
 
 
 class GlassdoorScraper(BaseScraper):
@@ -69,3 +69,5 @@ class GlassdoorScraper(BaseScraper):
 
     def parse_vagas(self, html: str) -> List[Vaga]:
         return []
+
+

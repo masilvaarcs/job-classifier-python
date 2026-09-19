@@ -6,7 +6,7 @@ from typing import List
 import re
 
 from .base import BaseScraper
-from ..models.vaga import Vaga
+from src.models.vaga import Vaga
 
 
 class LinkedInScraper(BaseScraper):
@@ -92,3 +92,5 @@ class LinkedInScraper(BaseScraper):
     def parse_vagas(self, html: str) -> List[Vaga]:
         """Parseia HTML raw (não usado diretamente neste scraper)."""
         return []
+
+

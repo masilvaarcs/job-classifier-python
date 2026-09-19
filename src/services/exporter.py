@@ -11,7 +11,7 @@ from datetime import datetime
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 
-from ..models.vaga import Vaga, TipoTrabalho
+from src.models.vaga import Vaga, TipoTrabalho
 
 
 # Cores por tipo de trabalho
@@ -96,3 +96,4 @@ def exportar_excel(vagas: List[Vaga], plataforma: str) -> str:
     wb.save(filepath)
 
     return filepath
+

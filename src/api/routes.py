@@ -8,10 +8,10 @@ from typing import List, Optional
 
 from fastapi import APIRouter, HTTPException, BackgroundTasks
 
-from ..models.vaga import Vaga, ScrapingResponse, ScrapingStatus
-from ..services.extractor import Extractor, SCRAPERS
-from ..services.classifier import classificar_lista, classificar_tipo
-from ..services.exporter import exportar_excel
+from src.models.vaga import Vaga, ScrapingResponse, ScrapingStatus
+from src.services.extractor import Extractor, SCRAPERS
+from src.services.classifier import classificar_lista, classificar_tipo
+from src.services.exporter import exportar_excel
 
 router = APIRouter()
 extractor = Extractor()

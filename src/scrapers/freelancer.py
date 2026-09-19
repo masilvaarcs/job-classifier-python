@@ -5,7 +5,7 @@ Scraper para Freelancer — Extração de projetos.
 from typing import List
 
 from .base import BaseScraper
-from ..models.vaga import Vaga, TipoTrabalho
+from src.models.vaga import Vaga, TipoTrabalho
 
 
 class FreelancerScraper(BaseScraper):
@@ -71,3 +71,5 @@ class FreelancerScraper(BaseScraper):
 
     def parse_vagas(self, html: str) -> List[Vaga]:
         return []
+
+

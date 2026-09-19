@@ -7,7 +7,7 @@ baseado em keywords e heurísticas.
 
 from typing import List
 
-from ..models.vaga import Vaga, TipoTrabalho
+from src.models.vaga import Vaga, TipoTrabalho
 
 
 # Keywords para classificação
@@ -64,3 +64,4 @@ def classificar_lista(vagas: List[Vaga]) -> List[Vaga]:
     for vaga in vagas:
         vaga.tipo_trabalho = classificar_tipo(vaga)
     return vagas
+
